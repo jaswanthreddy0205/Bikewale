@@ -1,0 +1,20 @@
+Column,Data Type,Description,Missing (count),Missing (%)
+brand,string (categorical),"Manufacturer brand, parsed from the model URL (e.g. Royal Enfield, Honda)",0,0.0
+model_name,string,"Model name without brand prefix (e.g. ""Hunter 350"")",0,0.0
+bike_name,string,"Full bike name including brand (e.g. ""Royal Enfield Hunter 350"")",0,0.0
+fuel_type,string (categorical),Petrol or Electric,57,3.8
+is_currently_sold,boolean,True if BikeWale lists a live price (i.e. currently on sale); False for discontinued/legacy models,0,0.0
+price_min,integer (INR),"Lowest ex-showroom price across variants, in INR",1090,72.2
+price_max,integer (INR),"Highest ex-showroom price across variants, in INR",1090,72.2
+mileage_arai_kmpl,float,Official ARAI-certified mileage in km/l (petrol bikes),1031,68.3
+displacement_cc,float,Engine displacement in cubic centimetres (blank for electric bikes),375,24.8
+max_power_bhp,float,Maximum power output in brake horsepower,335,22.2
+max_torque_nm,float,Maximum torque in Newton-metres,341,22.6
+fuel_tank_litres,float,Fuel tank capacity in litres,415,27.5
+kerb_weight_kg,float,Kerb weight in kilograms,321,21.3
+seat_height_mm,float,Seat height in millimetres,333,22.1
+front_brake_type,string (categorical),"Front brake type and specs (e.g. ""Disc, 300 mm"")",58,3.8
+rear_brake_type,string (categorical),Rear brake type and specs,58,3.8
+abs_type,string (categorical),"ABS/braking system type (e.g. ""Single Channel ABS"")",63,4.2
+user_rating,float (0-5),"Average owner rating out of 5, from BikeWale user reviews",472,31.3
+model_url,string (URL),Source page URL on BikeWale (for traceability),0,0.0
